@@ -1,0 +1,30 @@
+<head>
+    作文產生器
+</head>
+<form action="test.php" method="post">
+    用幾個字形容你的作文：<input type="text" name="UserName"></br>
+    用密碼來形容你的作文：<input type="password"></br>
+    你覺得作文哪裡最重要<select>
+        　<option value="Chi">起</option>
+        <option value="Cheng">承</option>
+        <option value="Zuan">轉</option>
+        <option value="He">合</option></select></br>
+    哪種程度的作文</br>
+    <input type="radio" name="school" value="kindergarden"> 幼稚園<br>
+    <input type="radio" name="school" value="elementary"> 小學<br>
+    <input type="radio" name="school" value="junior"> 國中<br>
+    <input type="radio" name="school" value="senior"> 高中<br>
+    <input type="radio" name="school" value="college"> 大學<br>
+    <input type="radio" name="school" value="research"> 碩博<br>
+    <input type="submit" value="產生作文">
+</form>
+
+<button onclick="myFunction()">預覽作文</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "作文";
+    }
+</script>
